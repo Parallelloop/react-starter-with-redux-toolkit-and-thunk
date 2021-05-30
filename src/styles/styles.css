@@ -1,0 +1,189 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+#body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #e5e5e5;
+}
+
+#appBar.MuiAppBar-colorPrimary {
+  background-color: #3f51b5;
+  height: 3.75rem;
+}
+
+.MuiDrawer-paper .MuiIconButton-root {
+  color: #ffffff;
+  padding-left: 1rem;
+}
+
+.listSidebar .MuiListItem-gutters {
+  padding-left: 1.5rem;
+}
+
+.content {
+  width: calc(100% - 300px);
+  float: right;
+  padding: 1.25rem;
+  margin-top: 4rem;
+}
+
+
+.bottom-header .filled, .bottom-header .success .filled:hover, .success .bottom-header .filled:hover, .bottom-header .deleteModal .filled:hover, .deleteModal .bottom-header .filled:hover {
+  background-color: #3f51b5;
+  color: #ffffff;
+}
+
+.bottom-header .filled:hover {
+  background-color: #3f51b5;
+}
+
+.layout {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.layout .makeStyles-drawer-1 .MuiDrawer-docked .makeStyles-drawerPaper-5 {
+  margin-top: 3.9375rem;
+}
+
+.layout .MuiButton-outlinedSizeSmall {
+  margin: 0.9375rem 0;
+}
+
+.Mui-selected .MuiListItemIcon-root,
+.Mui-selected .MuiListItemText-root {
+  color: #3f51b5;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+
+#panel1a-header .MuiAccordionSummary-root {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.collapse {
+  border: 1px solid rgba(151, 164, 186, 0.28);
+  width: 100%;
+  border-radius: 0.375rem;
+}
+
+.collapse .MuiAccordion-root {
+  position: unset;
+}
+
+.collapse .collapseHeading {
+  color: #7c828d;
+  font-size: 1rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+}
+
+.collapse .MuiAccordionSummary-root {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.collapse .MuiAccordionSummary-root .MuiIconButton-label .MuiSvgIcon-root {
+  color: #3f51b5;
+}
+
+.collapse .MuiAccordionSummary-root .MuiAccordionSummary-expandIcon.Mui-expanded {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.collapse .innerList {
+  padding-left: 1.3125rem;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.collapse .innerList .MuiListItem-root {
+  padding-top: 0;
+  padding-right: 0;
+  color: #7c828d;
+  font-size: 1rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  cursor: pointer;
+  padding-bottom: 0;
+}
+
+.collapse .MuiPaper-elevation1 {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.collapse .text-right {
+  text-align: right;
+}
+
+.collapse .py-16 {
+  padding: 0.4375rem 1.25rem 0.4375rem 1.5rem;
+  color: #212121;
+}
+
+
+.w-100 {
+  width: 100%;
+}
+
+.textSmall {
+  font-size: 0.625rem;
+}
+
+.textSmall.changeColor {
+  color: #0052cc;
+  padding: 0 0.125rem;
+}
+
+.colorChange {
+  color: #6bb700;
+}
+
+.textDanger {
+  color: #cd4b52;
+}
+
+.ml-2 {
+  margin-right: 0.3125rem;
+}
+
+.mr10 {
+  margin-right: 10px !important;
+}
+
+.tabTable .MuiBox-root {
+  padding: 0;
+}
+
+.ml-20 {
+  margin-left: 1.25rem;
+}
+
+.h-100vh {
+  height: calc(100vh - 230px);
+}
+
+.h-100vh .MuiTableCell-sizeSmall {
+  padding: 6px 0px 6px 0px;
+}
+
+#panel1a-header {
+  padding: 0 1.125rem 0 0;
+}
+
+/*# sourceMappingURL=styles.css.map */

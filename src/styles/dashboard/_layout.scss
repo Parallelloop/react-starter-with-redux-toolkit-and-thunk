@@ -1,0 +1,477 @@
+@import "../mixins";
+@import "../variable";
+#appBar {
+  &.MuiAppBar-colorPrimary {
+    background-color: $pumpkin;
+    height: rem(60);
+  }
+}
+.MuiDrawer-paper {
+  .MuiIconButton-root {
+    color: $white;
+    padding-left: rem(16);
+  }
+}
+.listSidebar {
+  .MuiListItem-gutters {
+    padding-left: rem(24);
+  }
+}
+.content {
+  width: calc(100% - 300px);
+  float: right;
+  padding: rem(20);
+  margin-top: rem(64);
+}
+.bottom-header {
+  .filled {
+    background-color: $pumpkin;
+    color: $white;
+    &:hover {
+      background-color: $pumpkin;
+    }
+  }
+}
+
+.layout {
+  display: flex;
+  .makeStyles-drawer-1 {
+    .MuiDrawer-docked {
+      .makeStyles-drawerPaper-5 {
+        margin-top: rem(63);
+      }
+    }
+  }
+  .MuiButton-outlinedSizeSmall {
+    margin: rem(15) 0;
+  }
+}
+.Mui-selected {
+  .MuiListItemIcon-root,
+  .MuiListItemText-root {
+    color: $pumpkin;
+  }
+}
+#customized-menu {
+  .MuiMenu-paper {
+    margin-top: rem(10);
+  }
+  .MuiMenu-list {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+.addAccount {
+  border: 2px solid $slate-gray;
+  cursor: pointer;
+  padding: rem(66) rem(0);
+  .MuiSvgIcon-root {
+    color: $nobel;
+  }
+  .MuiTypography-h6 {
+    color: $nobel;
+    @include fonts($nobel, rem(24), $base-font, $regular);
+  }
+}
+.selectAccount {
+  cursor: pointer;
+  border: 2px solid $slate-gray;
+  padding: rem(15) rem(35);
+  .name,
+  .marketPlace {
+    @include fonts($dove-grey, rem(14), $base-font, $light);
+  }
+  .region {
+    @include fonts($dove-grey, rem(18), $base-font, $regular);
+  }
+  .MuiCheckbox-colorSecondary.Mui-checked {
+    color: $limeade;
+  }
+  .smallFlag {
+    width: rem(26);
+    margin: rem(4);
+  }
+  .action {
+    &.MuiButton-text {
+      @include fonts($dove-grey, rem(14), $base-font, $regular);
+      padding: rem(0) rem(8);
+    }
+  }
+}
+.table {
+  flex-grow: 1;
+  width: 100%;
+  background-color: $white;
+  .MuiInputBase-input {
+    border: $galleryBorder;
+  }
+  .MuiTab-root {
+    @include fonts($black, rem(14), $base-font, $regular);
+  }
+  .MuiAppBar-positionStatic {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .tabs {
+    .MuiAppBar-colorDefault {
+      background-color: $white;
+    }
+  }
+}
+.inviteOther {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: rem(80);
+  .MuiButton-label {
+    @include fonts($black, rem(14), $base-font, $regular);
+  }
+  .MuiButton-startIcon {
+    color: $pumpkin;
+  }
+}
+.productModal {
+  background-color: $white;
+  .headingModal {
+    @include fonts($black, rem(20), $base-font, $regular);
+  }
+  .crossBox {
+    display: flex;
+    justify-content: space-between;
+    padding: rem(16);
+  }
+  .inputs {
+    padding: rem(30) rem(15);
+    .MuiTextField-root {
+      margin-bottom: rem(35);
+    }
+  }
+  .submitButton {
+    display: flex;
+    justify-content: flex-end;
+    padding: rem(16);
+    .btn-save {
+      @include btn-save;
+      margin-right: rem(15);
+    }
+    .btn-cancel {
+      // border: 1px solid #263238;
+      @include btn-cancel;
+    }
+  }
+}
+.cursor {
+  cursor: pointer;
+}
+.multiple {
+  .MuiFormControl-root {
+    width: 100%;
+  }
+}
+.product {
+  flex-grow: 1;
+  background-color: $white;
+  .MuiAppBar-colorPrimary {
+    color: inherit;
+    background-color: $white;
+    box-shadow: none;
+    .MuiInputBase-input {
+      border: $galleryBorder;
+    }
+  }
+  .import {
+    .MuiButton-startIcon {
+      color: $pumpkin;
+    }
+  }
+}
+.drawerForm {
+  padding: rem(20);
+  .MuiFormControl-fullWidth {
+    margin-bottom: rem(20);
+  }
+  .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+    border-color: $pumpkin;
+  }
+  .MuiFormLabel-root.Mui-focused {
+    color: $pumpkin;
+  }
+  .btn-save {
+    @include btn-save;
+    margin-right: rem(15);
+  }
+  .btn-cancel {
+    @include btn-cancel;
+  }
+}
+#panel1a-header {
+  .MuiAccordionSummary-root {
+    flex-direction: row-reverse;
+  }
+}
+.collapse {
+  border: $mainBorder;
+  width: 100%;
+  border-radius: rem(6);
+  .MuiAccordion-root {
+    position: unset;
+  }
+  .collapseHeading {
+    @include fonts($raven, rem(16), $base-font, $light);
+  }
+  .MuiAccordionSummary-root {
+    flex-direction: row-reverse;
+    .MuiIconButton-label {
+      .MuiSvgIcon-root {
+        color: $pumpkin;
+      }
+    }
+    .MuiAccordionSummary-expandIcon.Mui-expanded {
+      transform: rotate(90deg);
+    }
+  }
+  .innerList {
+    padding-left: rem(21);
+    padding-top: 0;
+    padding-bottom: 0;
+    .MuiListItem-root {
+      padding-top: 0;
+      padding-right: 0;
+      @include fonts($raven, rem(16), $base-font, $light);
+      cursor: pointer;
+      padding-bottom: 0;
+    }
+  }
+  .MuiPaper-elevation1 {
+    box-shadow: none;
+  }
+  .text-right {
+    text-align: right;
+  }
+  .py-16 {
+    padding: rem(7) rem(20) rem(7) rem(24);
+    color: $mineShaft;
+  }
+}
+.selectOption {
+  .MuiFormLabel-root {
+    font-size: rem(14);
+  }
+  .MuiOutlinedInput-input {
+    padding: rem(14) rem(14);
+  }
+  .MuiInputLabel-formControl {
+    top: rem(-4);
+  }
+}
+.w-100 {
+  width: 100%;
+}
+.productTable {
+  border: $mainBorder;
+  width: 100%;
+  border-radius: rem(6);
+  .highcharts-credits,
+  .highcharts-axis-title {
+    display: none;
+  }
+}
+.accounts {
+  flex-grow: 1;
+  background-color: $white;
+  .MuiInputBase-input {
+    border: $galleryBorder;
+  }
+  .addAccount {
+    .MuiSvgIcon-root {
+      color: $pumpkin;
+    }
+  }
+  .connected {
+    background: $iceberg;
+    color: $shamrock;
+    padding: rem(3) rem(14);
+    border-radius: rem(50);
+    font-size: rem(11);
+  }
+  .not-connected {
+    color: $royalBlue;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+}
+.success {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 110px);
+  .heading {
+    @include fonts($black, rem(32), $base-font, $bold);
+    margin-bottom: rem(5);
+  }
+  .successHeading {
+    @include fonts($black, rem(32), $base-font, $bold);
+  }
+  .lower-heading {
+    @include fonts($oxford-bold, rem(14), $base-font, $light);
+    margin-bottom: rem(8);
+  }
+  .accountButton {
+    margin-bottom: rem(15);
+    button {
+      margin: 0 rem(10);
+    }
+  }
+  .filled {
+    background-color: $pumpkin;
+    color: $white;
+    padding: rem(5) rem(50);
+    &:hover {
+      @extend .filled;
+    }
+  }
+}
+.deleteModal {
+  .filled {
+    background-color: $pumpkin;
+    color: $white;
+    margin-right: rem(20);
+    &:hover {
+      @extend .filled;
+    }
+  }
+  .heading {
+    @include fonts($tuatara, rem(24), $base-font, $bold);
+    padding-top: rem(30);
+    padding-bottom: rem(0);
+  }
+  .modalText {
+    @include fonts($oxford-bold, rem(14), $base-font, $light);
+    padding: rem(3) 0;
+  }
+}
+.textSmall {
+  font-size: rem(10);
+  &.changeColor {
+    color: $scienceBlue;
+    padding: 0 rem(2);
+  }
+}
+.colorChange {
+  color: $limeade;
+}
+.textDanger {
+  color: $chestnutRose;
+}
+.ml-2 {
+  margin-right: rem(5);
+}
+.importStepper {
+  width: 55%;
+  background-color: $white;
+  padding: 2% 0;
+  .stepperClose {
+    background-color: $pumpkin;
+    color: $white;
+  }
+  .selectType {
+    @include fonts($mineShaft, rem(14), $base-font, $light);
+  }
+  .importButton {
+    background-color: $pumpkin;
+    color: $white;
+    width: 100%;
+    margin-top: rem(15);
+    margin-bottom: rem(20);
+    &:hover {
+      @extend .importButton;
+    }
+  }
+  .disabled {
+    background-color: $athensGray;
+    color: $silverChalice;
+    width: 100%;
+    margin-top: rem(15);
+    margin-bottom: rem(20);
+    &:hover {
+      @extend .disabled;
+    }
+  }
+  .centerText {
+    display: flex;
+    justify-content: center;
+    width: 65%;
+    margin: 0 auto;
+  }
+  .fileUpload {
+    width: rem(444);
+    height: rem(205);
+    border: 3px dashed rgba(157, 166, 196, 0.71);
+    background-color: transparent;
+    box-shadow: none;
+    &:hover {
+      background-color: transparent;
+      box-shadow: none;
+    }
+  }
+  #w-100 {
+    min-width: 145px;
+    margin-bottom: rem(10);
+    .MuiInputLabel-formControl {
+      top: 4px;
+    }
+    .MuiFormLabel-root {
+      font-size: rem(14);
+    }
+  }
+  .mb-20 {
+    margin-bottom: rem(20);
+  }
+  .colorCaption {
+    color: $boulder;
+    font-size: rem(10);
+    margin-top: rem(10);
+  }
+  .listView {
+    $this: &;
+    &__tr {
+      font-size: rem(10);
+      color: $boulder;
+    }
+  }
+  .successUpload {
+    text-align: center;
+    .fileSuccess {
+      margin-top: rem(20);
+      margin-bottom: rem(10);
+      @include fonts($mineShaft, rem(20), $base-font, $bold);
+    }
+    .successPara {
+      @include fonts($boulder, rem(14), $base-font, $light);
+    }
+  }
+}
+.progress {
+  position: absolute;
+  left: 50%;
+  right: 50%;
+}
+.tabTable {
+  .MuiBox-root {
+    padding: 0;
+  }
+}
+.ml-20 {
+  margin-left: rem(20);
+}
+.h-100vh {
+  height: calc(100vh - 230px);
+  .MuiTableCell-sizeSmall {
+    padding: 6px 0px 6px 0px;
+  }
+}
+#panel1a-header {
+  padding: 0 rem(18) 0 0;
+}

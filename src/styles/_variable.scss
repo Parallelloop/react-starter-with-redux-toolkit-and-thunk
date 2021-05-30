@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+$base-font: "Roboto", sans-serif;
+
+//GLOBAL FONT WEIGHT
+$light: 300 !default;
+$regular: 400 !default;
+$medium: 500 !default;
+$semi-bold: 600 !default;
+$bold: 700 !default;
+$extra-bold: 900 !default;
+//Color
+$black: #000000;
+$pumpkin: #3f51b5;
+$mercury: #e5e5e5;
+$white: #ffffff;
+$slate-gray: #718690;
+$ebb: #edebe9;
+$nobel: #bab5b5;
+$dove-grey: #646464;
+$limeade: #6bb700;
+$gallery: #ededed;
+$raven: #7c828d;
+$oxford-bold: #32394e;
+$tuatara: #201f1e;
+$mineShaft: #252525;
+$boulder: #757575;
+$scienceBlue: #0052cc;
+$chestnutRose: #cd4b52;
+$athensGray: #eaeaf0;
+$silverChalice: #afafaf;
+$outerSpace: #263238;
+$shamrock: #34c38f;
+$iceberg: #d6f3e9;
+$royalBlue: #347fee;
+$mineShaft: #212121;
+//Border
+$mainBorder: 1px solid rgba(151, 164, 186, 0.28);
+$galleryBorder: 1.5px solid $gallery;
+$ebbBorder: 1px solid $ebb;
+$pumpkinBorder: 1px solid $pumpkin;
+$outerSpaceBorder: 1 px solid $outerSpace;

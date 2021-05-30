@@ -1,0 +1,40 @@
+//PX to REM
+@import "../styles/variable";
+$base-font-size: 16px;
+$base-size: $base-font-size;
+
+@function rem($pixels, $context: $base-size) {
+  @if (unitless($pixels)) {
+    $pixels: $pixels * 1px;
+  }
+
+  @if (unitless($context)) {
+    $context: $context * 1px;
+  }
+
+  @return $pixels / $context * 1rem;
+}
+//FONTS
+
+@mixin fonts($color, $size, $font-family, $weight) {
+  color: $color;
+  font-size: $size;
+  font-family: $font-family;
+  font-weight: $weight;
+}
+@mixin btn-save {
+  background-color: $pumpkin;
+  color: $white;
+  padding: rem(8) rem(35);
+  &:hover {
+    background-color: $pumpkin;
+  }
+}
+@mixin btn-cancel {
+  border: $outerSpaceBorder;
+  color: $black;
+  padding: rem(8) rem(35);
+  &:hover {
+    border: $outerSpaceBorder;
+  }
+}
